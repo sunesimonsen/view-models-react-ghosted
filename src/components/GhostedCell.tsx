@@ -1,6 +1,6 @@
 import type { MouseEvent } from "react";
 import type { Cell, GameStatus } from "../state/GhostedModel";
-import { DoorClosedIcon, DoorOpenIcon, GhostIcon } from "./icons";
+import { DoorClosedIcon, GhostIcon } from "./icons";
 
 type GhostedCellProps = {
   cell: Cell;
@@ -59,7 +59,9 @@ export const GhostedCell = ({
       )}
       {cell.revealed && cell.hasGhost && <GhostIcon className="ghost-icon" />}
       {cell.revealed && !cell.hasGhost && cell.adjacentGhosts === 0 && (
-        <DoorOpenIcon className="door-icon open" />
+        <span className="count empty" data-count={cell.adjacentGhosts}>
+          {cell.adjacentGhosts}
+        </span>
       )}
       {cell.revealed && !cell.hasGhost && cell.adjacentGhosts > 0 && (
         <span className="count" data-count={cell.adjacentGhosts}>

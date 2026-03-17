@@ -47,17 +47,3 @@ export const DoorClosedIcon = ({ className, title }: IconProps) => (
     <circle cx="84" cy="80" r="6" fill="#e8c779" />
   </svg>
 );
-
-export const DoorOpenIcon = ({ className, title }: IconProps) => (
-  <svg
-    className={className}
-    viewBox="0 0 120 160"
-    role="img"
-    aria-label={title ?? "Open door"}
-  >
-    <rect x="18" y="12" width="84" height="136" rx="8" fill="#2a1d18" />
-    <path d="M38 20h42c6 0 10 4 10 10v100c0 6-4 10-10 10H38z" fill="#6b3b2a" />
-    <path d="M32 20h36c6 0 10 4 10 10v100c0 6-4 10-10 10H32z" fill="#824833" />
-    <circle cx="72" cy="80" r="5" fill="#e8c779" />
-  </svg>
-);

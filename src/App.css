@@ -225,6 +225,10 @@
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
+.count.empty {
+  color: #505050;
+}
+
 .count[data-count="1"] {
   color: #c7ddff;
 }
