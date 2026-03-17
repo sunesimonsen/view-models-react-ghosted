@@ -78,6 +78,50 @@
   box-shadow: 0 20px 50px rgba(8, 10, 20, 0.45);
 }
 
+.dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 8, 12, 0.65);
+  display: grid;
+  place-items: center;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+}
+
+.dialog {
+  width: min(420px, 90vw);
+  padding: 2.2rem;
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(32, 22, 24, 0.98),
+    rgba(18, 24, 35, 0.98)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.dialog h2 {
+  margin: 0;
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-size: 1.8rem;
+}
+
+.dialog p {
+  margin: 0 0 0.5rem;
+  color: rgba(246, 243, 235, 0.75);
+}
+
+.dialog-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 0.65rem;
+  color: rgba(239, 184, 124, 0.8);
+}
+
 .game-toolbar {
   display: flex;
   flex-wrap: wrap;

@@ -36,6 +36,18 @@ const GhostedApp = () => {
 
   return (
     <div className="app">
+      {state.status === "won" && (
+        <div className="dialog-backdrop" role="dialog" aria-modal="true">
+          <div className="dialog">
+            <span className="dialog-kicker">You won</span>
+            <h2>Every ghost is back behind its door.</h2>
+            <p>Want to play another haunting?</p>
+            <button className="reset" onClick={() => model.startGame()}>
+              Start new game
+            </button>
+          </div>
+        </div>
+      )}
       <header className="hero">
         <div className="hero-title">
           <span className="hero-kicker">Ghosted</span>
