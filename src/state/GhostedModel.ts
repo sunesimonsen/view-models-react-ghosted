@@ -216,7 +216,7 @@ export class GhostedModel extends ViewModel<GhostedState> {
   revealCell = (row: number, col: number) => {
     if (this.state.status === "won" || this.state.status === "lost") return;
 
-    let grid = cloneGrid(this.state.grid);
+    const grid = cloneGrid(this.state.grid);
     const cell = grid[row]?.[col];
     if (!cell || cell.flagged || cell.revealed) return;
 
