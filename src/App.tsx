@@ -50,8 +50,8 @@ const GhostedApp = () => {
       )}
       <header className="hero">
         <div className="hero-title">
-          <span className="hero-kicker">Ghosted</span>
-          <h1>Behind Every Door</h1>
+          <span className="hero-kicker">Ghosts hiding everywhere</span>
+          <h1>Ghosted</h1>
         </div>
         <p className="hero-tagline">
           A minesweeper-inspired haunting built with @view-models/react.
